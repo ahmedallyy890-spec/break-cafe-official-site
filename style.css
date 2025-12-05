@@ -1,0 +1,145 @@
+body {
+    background: linear-gradient(to right, rgb(133, 255, 168), rgb(120, 255, 120));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+header {
+    position: fixed;
+    background-color: white;
+    top: 16px;
+    display: flex;
+    border-radius: 30px;
+    width: 96%;
+    left: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 90px rgb(90, 252, 90);
+    z-index: 1000;
+}
+header h2 {
+    color: rgb(43, 99, 0);
+}
+header nav {
+    display: flex;
+    align-items: center;
+
+}
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+header nav ul a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+.main {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.main h1 {
+    color: rgb(0, 51, 0);
+    z-index: 99;
+}
+.main .selector {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(21, 112, 0);
+    z-index: 99;
+    filter: blur(0px);
+}
+.main .img1 {
+    width: 30%;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    filter: blur(1.8px) drop-shadow(0px 4px 80px rgba(0, 134, 0, 0.257));
+    z-index: 0;
+}
+.main .main-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.6s ease;
+}
+.main .main-btn:hover {
+    background-color: rgb(0, 177, 0);
+    transform: scale(1.06);
+    padding: 16.5px;
+}
+.about {
+    text-align: center;
+    margin: 60px;
+    color: rgb(14, 92, 0);
+}
+.about p {
+    font-size: 1.27em;
+    font-weight: 500;
+}
+.drinks {
+    background-color: rgb(231, 253, 227);
+    padding: 20px;
+}
+.drinks h1 {
+    color: rgb(43, 99, 0);
+}
+.drinks .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.drinks .cards .card {
+    display: inline-block;
+    background-color: rgba(90, 255, 90, 0.567);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px green solid;
+    transition: 0.6s ease;
+    margin-top: 30px;
+    width: 150px;
+}
+.drinks .cards .card:hover {
+    background-color: rgb(101, 246, 101);
+    border-radius: 30px;
+    border: 2px green solid;
+    transform: translateY(-20px);
+    box-shadow: 0px 4px 90px rgb(165, 255, 165);
+}
+.contact h1 {
+    color: rgb(17, 111, 0);
+}
+
+.contact a img{
+    width: 50px;
+    transition: 0.6s ease;
+}
+.contact a img:hover {
+    transform: scale(1.2);
+    opacity: 90%;
+}
+@media (max-width: 700px) {
+    header {
+        display: none;
+    }
+}
+@media (max-width: 589px) {
+    .main .img1 {
+        width: 38%;
+        top: 5px;
+    }
+}
